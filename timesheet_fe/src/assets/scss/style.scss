@@ -1,0 +1,31 @@
+@use "./partials/vars" as *;
+@use "./partials/colors" as *;
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.errorMessage {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #dc3545;
+  padding-top: 0.5rem;
+}
+
+.formFieldFlexDouble {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & > * {
+    flex: 0 0 calc(50% - 1rem);
+  }
+}
+
+.formFieldFlexSingle {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  & > * {
+    flex: 0 0 calc(50% - 1rem);
+  }
+}
